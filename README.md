@@ -6,6 +6,7 @@ author.
 * I build midware and automation with [Python](https://python.org)
 * I write fantasy adventure short stories
 * On the weekends I play Minecraft
+* Yes, that is an egg wearing a leather jacket
 
 Noteable quotables:
 

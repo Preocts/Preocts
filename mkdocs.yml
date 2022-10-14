@@ -1,4 +1,5 @@
 site_name: "Preocts"
+site_description: "Home of a simple egg's documents, musings, and write-ups."
 repo_url: "https://github.com/Preocts/Preocts"
 repo_name: "Preocts/Preocts"
 docs_dir: "docs"
@@ -13,6 +14,7 @@ theme:
   name: "material"
   font: false
   language: "en"
+  logo: "images/preocts_eggatar_100x100.png"
   icon:
     repo: "fontawesome/brands/github"
     edit: "material/file-edit-outline"
@@ -62,6 +64,9 @@ extra:
     actions:
       - "accept"
       - "reject"
+
+extra_css:
+  - stylesheets/extra.css
 
 copyright: >
   Copyright &copy; 2022 - 2022 Preocts –

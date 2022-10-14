@@ -147,4 +147,4 @@ Python interpreter is running (working directory).
 Eggs are amazing. # (1)!
 ```
 
-1. eggmazing, if you will...  that's it, that's the yolk.  Hope you had a shell of a good time reading this.
+1. In fact, they are eggcellent.  that's it, that's the yolk.  Now go have a shell of a good time programming.  Don't let little things like this scramble you.

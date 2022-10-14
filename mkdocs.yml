@@ -1,4 +1,5 @@
 site_name: "Preocts"
+site_description: "Home of a simple egg's documents, musings, and write-ups."
 repo_url: "https://github.com/Preocts/Preocts"
 repo_name: "Preocts/Preocts"
 docs_dir: "docs"
@@ -13,6 +14,7 @@ theme:
   name: "material"
   font: false
   language: "en"
+  logo: "images/preocts_eggatar_100x100.png"
   icon:
     repo: "fontawesome/brands/github"
     edit: "material/file-edit-outline"
@@ -20,7 +22,7 @@ theme:
       note: octicons/tag-16
       abstract: octicons/checklist-16
       info: octicons/info-16
-      tip: octicons/squirrel-16
+      tip: material/lightbulb-on-10
       success: octicons/check-16
       question: octicons/question-16
       warning: octicons/alert-16
@@ -50,6 +52,7 @@ theme:
   features:
     - navigation.instant
     - navigation.top
+    - content.code.annotate
 
 extra:
   consent:
@@ -63,6 +66,9 @@ extra:
       - "accept"
       - "reject"
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: >
   Copyright &copy; 2022 - 2022 Preocts –
   <a href="#__consent">Change cookie settings</a>
@@ -73,6 +79,10 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 
 plugins:
   - glightbox:

@@ -9,7 +9,7 @@ open a file, read the contents, and take some actions.  You put your program
 (`reader.py`) in the same directory as the file (`source.txt`) and code up the
 following:
 
-```py
+``` py title="reader.py"
 with open("source.txt", "r"): as infile:
     file_contents = infile.read()
 
@@ -20,7 +20,7 @@ Here you tell Python to `open` the file `source.txt` and you don't give any type
 of filepath to the file because it's right there, in the same place as your
 program `reader.py`.  So you hit `Run` in your editor of choice and...
 
-```py
+``` py title="console output" hl_lines="3"
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 FileNotFoundError: [Errno 2] No such file or directory: 'source.txt'
@@ -31,7 +31,7 @@ What?
 Now we're sure the `reader.py` and the `source.txt` are together in a folder
 named `project`.  It looks like this:
 
-```
+``` title="directory tree"
 C
 └── Users
     └── preocts
@@ -44,7 +44,7 @@ C
 So, `reader.py` should totally be able to see `source.txt` and open it. Right?
 Well, if we add a few lines of code we see the cause of our issue.
 
-```py
+``` py title="reader.py" hl_lines="1 3-4"
 import pathlib
 
 print(pathlib.Path().cwd())
@@ -56,7 +56,7 @@ with open("source.txt", "r"): as infile:
 print(contents)
 ```
 
-```py
+```py title="Console output" hl_lines="1-2"
 C:\Users\preocts
 C:\Users\preocts\Documents\project\reader.py
 
@@ -109,7 +109,7 @@ Instead, we can leverage that special `__file__` value and open `source.txt`
 `source.txt` is in relation to `reader.py` we will be able to find and open it.
 To do this, we'll, again, use `pathlib`.
 
-```py
+``` py
 filepath = pathlib.Path(__file__).parent / "source.txt"
 ```
 
@@ -129,7 +129,7 @@ as we move `source.txt` with it.
 
 Our end code looks like this:
 
-```py
+``` py title="reader.py" hl_lines="1 3"
 import pathlib
 
 filepath = pathlib.Path(__file__).parent / "source.txt"
@@ -143,6 +143,8 @@ print(file_contents)
 With an expected output of our file without needing to worry about where the
 Python interpreter is running (working directory).
 
+``` py title="Console output"
+Eggs are amazing. # (1)!
 ```
-Eggs are amazing.
-```
+
+1. eggmazing, if you will...  that's it, that's the yolk.  Hope you had a shell of a good time reading this.

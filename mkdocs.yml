@@ -2,6 +2,7 @@ site_name: "Preocts"
 repo_url: "https://github.com/Preocts/Preocts"
 repo_name: "Preocts/Preocts"
 docs_dir: "docs"
+edit_uri: "edit/main/docs"
 
 nav:
   - Home: "index.md"
@@ -12,6 +13,7 @@ theme:
   language: "en"
   icon:
     repo: "fontawesome/brands/github"
+    edit: "material/file-edit-outline"
 
   palette:
     - media: "(prefers-color-scheme: light)"

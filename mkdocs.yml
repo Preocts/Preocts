@@ -71,3 +71,17 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: true
+      effect: zoom
+      width: "100%"
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: true
+      caption_position: bottom

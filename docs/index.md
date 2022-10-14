@@ -1,5 +1,7 @@
 # Greetings
 
+![Preocts Eggatar](images/preocts_eggatar_100x100.png){ align=right }
+
 I'm Preocts. Software engineer, trouble-shooting button pusher, and aspiring
 author.
 

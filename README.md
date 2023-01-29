@@ -1,8 +1,8 @@
-I'm Preocts. Software engineer, trouble-shooting button pusher, and aspiring
-author.
+I'm Preocts. I am a software engineer, a trouble-shooting button pusher,
+and story teller.
 
 * Current career focus is helping people dislike being on-call less
-* I build midware and automation with [Python](https://python.org)
+* Most of my work here is learning, exploration, and refinement of patterns
 * I write fantasy adventure short stories
 * On the weekends I play Minecraft
 * Yes, that is an egg wearing a leather jacket
